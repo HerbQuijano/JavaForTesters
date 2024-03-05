@@ -1,4 +1,4 @@
-package oopconcepts;
+package oopsconcepts;
 
 public class ClassDemo {
 
