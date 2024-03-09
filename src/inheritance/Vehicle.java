@@ -75,6 +75,7 @@ public class Vehicle {
         return this.numWheels;
     }
 
+    @Override
     public String toString() {
         return "Speed: " + this.speed + " Acceleration: " + this.acceleration + " IsRegistered: " + this.isRegistered;
     }
