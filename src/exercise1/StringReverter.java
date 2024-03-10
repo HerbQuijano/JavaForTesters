@@ -2,14 +2,18 @@ package exercise1;
 
 public class StringReverter {
 
-    public StringReverter(String s) {
+    public String RevertString(String s) {
+        String reversed = "";
+
         if (s.isEmpty() || s.length() < 1) {
-            System.out.println("Empty string");
+            reversed = "Empty String";
         } else {
-            String[] reversed = s.split(" ");
-            for (int i = reversed.length - 1; i >= 0; i--) {
-                System.out.print(reversed[i] + " ");
+            String[] splitString = s.split("");
+            for (int i = splitString.length - 1; i >= 0; i--) {
+                reversed = reversed + splitString[i];
             }
+            
         }
+        return reversed;
     }
 }
