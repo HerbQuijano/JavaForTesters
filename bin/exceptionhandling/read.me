@@ -1,0 +1,19 @@
+Use checked exceptions when:
+
+You want to enforce that the calling code handles the exception.
+Checked exceptions are a way to ensure that the caller is aware of potential issues and is prepared to handle them.
+
+The exception is recoverable, meaning the calling code can take some action to rectify the issue and continue execution.
+The error is a result of external circumstances that the code cannot control, such as a missing file or a network error.
+
+
+Use unchecked exceptions when:
+
+The exception is due to a programming error or a bug, such as a NullPointerException or an ArrayIndexOutOfBoundsException.
+In these cases, the calling code is not expected to recover from the error, and it's usually better to fix the bug in the code itself.
+
+You don't want to force the caller to handle the exception, either because it's not critical or because it's a runtime issue that the application can't do much about.
+You're creating a runtime exception that is specific to your application's domain and is not meant to be caught and handled in a specific way.
+
+In general, use checked exceptions for situations where the caller can reasonably be expected to recover from the exception,
+and use unchecked exceptions for programming errors and situations where recovery is not expected or is not possible.
