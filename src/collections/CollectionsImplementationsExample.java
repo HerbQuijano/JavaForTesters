@@ -5,7 +5,7 @@ import java.util.*;
 public class CollectionsImplementationsExample {
     public static void main(String[] args) {
         // ArrayList (List implementation)
-        List<String> arrayList = new ArrayList<>();
+        ArrayList<String> arrayList = new ArrayList<>();
         arrayList.add("Apple");
         arrayList.add("Banana");
         arrayList.add("Orange");
