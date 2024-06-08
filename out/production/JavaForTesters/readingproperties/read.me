@@ -1,0 +1,23 @@
+import java.io.FileInputStream;
+The FileInputStream class is part of the java.io package.
+It is used to read data from a file in the form of a sequence of bytes.
+In the context of the PropertiesReader class, FileInputStream is used to read the properties file from the file system so that its contents can be loaded into a Properties object.
+
+import java.io.IOException;
+The IOException class is also part of the java.io package.
+It is a checked exception that represents an input or output operation failure.
+In the PropertiesReader class, IOException is used to handle any errors that may occur while reading the properties file, such as if the file does not exist or cannot be accessed.
+
+import java.util.Properties;
+The Properties class is part of the java.util package.
+It is a subclass of Hashtable and is used to manage a set of key-value pairs.
+In the context of the PropertiesReader class, a Properties object is used to load and store the key-value pairs from the properties file.
+The load method is used to read the properties from the FileInputStream, and the getProperty method is used to retrieve the value associated with a specific key.
+
+
+The interaction between these imports in the PropertiesReader class can be summarized as follows:
+A FileInputStream is created to read the properties file.
+A Properties object is created to hold the key-value pairs from the file.
+The load method of the Properties object is called with the FileInputStream as an argument to load the properties from the file.
+The getProperty method of the Properties object is used to retrieve the values of specific properties by their keys.
+An IOException may be thrown during these operations if there are any issues with reading the file, and it is caught and handled in a catch block.
